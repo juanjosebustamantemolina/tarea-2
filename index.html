@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Excel</title>
+	<style>
+		.cuaOP{
+			position: absolute;
+			border: solid black 5px;
+            top: 2%;
+            left: 3%;
+			height: 95%;
+			width: 20%;
+			background: paleturquoise;
+		}
+		.boton1{
+			position: absolute;
+			border: solid black 4px;
+            width: 190px;
+            height: 120px;
+            left: 17%;
+            top: 10%;
+            border-radius: 50%;
+            border-radius: 50%;
+            border-radius: 50%;
+            background: royalblue;
+            transition: 2s;
+            font-size: 20px;
+		}
+		.boton2{
+			position: absolute;
+			border: solid black 4px;
+            width: 180px;
+            height: 120px;
+            left: 17%;
+            top: 40%;
+            border-radius: 50%;
+            border-radius: 50%;
+            border-radius: 50%;
+            background: limegreen;
+            transition: 2s;
+		}
+		.boton3{
+			position: absolute;
+			border: solid black 4px;
+            width: 180px;
+            height: 120px;
+            left: 17%;
+            top: 70%;
+            border-radius: 50%;
+            border-radius: 50%;
+            border-radius: 50%;
+            background: indianred;
+            transition: 2s;
+		}
+		.boton1:hover{
+	        background: yellow;
+	        display:block;
+	        color: black;
+        }
+        .boton2:hover{
+	        background: yellow;
+	        display:block;
+	        color: black;
+        }
+        .boton3:hover{
+	        background: yellow;
+	        display:block;
+	        color: black;
+        }
+        .cuaINFO{
+        	position: absolute;
+        	border: solid black 0px;
+        	left: 142%;
+        	top: -58%;
+        	width: 513%;
+        	height: 0%;
+        	transition: all 5s;
+        	background: darkgray;
+        }
+        .text{
+        	position: absolute;
+        	top: 30px;
+        	font-size: 18px;
+        	left: 5%;
+        	right: 2%;
+        	font-family: forte;
+        }
+        .text1{
+        	position: absolute;
+        	top: 30px;
+        	font-size: 17px;
+        	left: 8%;
+        	right: 2%;
+        	font-family: forte;
+        }
+        .text2{
+        	position: absolute;
+        	top: 15px;
+        	font-size: 17px;
+        	left: 12%;
+        	right: 2%;
+        	font-family: forte;
+        }
+        .boton1:active .cuaINFO{
+        	height: 520%;
+        	border: solid black 5px;
+        }
+        .cuaINFO1{
+        	position: absolute;
+        	border: solid black 0px;
+        	left: 150%;
+        	top: -215%;
+        	width: 540%;
+        	height: 0%;
+        	transition: all 5s;
+        	background: darkgray;
+        }
+        .boton2:active .cuaINFO1{
+        	height: 520%;
+        	border: solid black 5px;
+        }
+        .cuaINFO2{
+        	position: absolute;
+        	border: solid black 0px;
+        	left: 150%;
+        	top: -370%;
+        	width: 540%;
+        	height: 0%;
+        	transition: all 5s;
+        	background: darkgray;
+        }
+        .boton3:active .cuaINFO2{
+        	height: 520%;
+        	border: solid black 5px;
+        }
+        .ti{
+        	position: absolute;
+        	top: -50%;
+        	width: 180%;
+        	height: 0%;
+        	left: 305%;
+        	border: solid black 0px;
+        	transition: all 5s;
+        }
+        .boton1:active .ti{
+        	height: 50%;
+        	border: solid black 5px;
+        }
+        .ti1{
+            position: absolute;
+        	top: -100px;
+        	font-size: 23px;
+        	left: 10%;
+        	right: 2%;
+        	font-family: forte;
+        	transition: all 5s;
+        	color: rgba(0, 0, 0, 0);
+        }
+        .boton1:active .ti1{
+        	top: 0px;
+        	color: yellow;
+        }
+        .tu{
+        	position: absolute;
+        	top: -205%;
+        	width: 180%;
+        	height: 0%;
+        	left: 325%;
+        	border: solid black 0px;
+        	transition: all 5s;
+        }
+        .boton2:active .tu{
+        	height: 50%;
+        	border: solid black 5px;
+        }
+        .tu1{
+            position: absolute;
+        	top: -100px;
+        	font-size: 23px;
+        	left: 10%;
+        	right: 2%;
+        	font-family: forte;
+        	transition: all 5s;
+        	color: rgba(0, 0, 0, 0);
+        }
+        .boton2:active .tu1{
+        	top: 0px;
+        	color: yellow;
+        }
+        .lo{
+        	position: absolute;
+        	top: -360%;
+        	width: 180%;
+        	height: 0%;
+        	left: 325%;
+        	border: solid black 0px;
+        	transition: all 5s;
+        }
+        .boton3:active .lo{
+        	height: 73%;
+        	border: solid black 5px;
+        }
+        .lo1{
+            position: absolute;
+        	top: -100px;
+        	font-size: 23px;
+        	left: 10%;
+        	right: 2%;
+        	font-family: forte;
+        	transition: all 5s;
+        	color: rgba(0, 0, 0, 0);
+        }
+        .boton3:active .lo1{
+        	top: 0px;
+        	color: yellow;
+        }
+        .info1{
+            position: absolute;
+            top: -300px;
+            font-size: 23px;
+            left: 200%;
+            width: 400%;
+            font-family: forte;
+            transition: all 5s;
+            color: rgba(0, 0, 0, 0);
+        }
+        .boton1:active .info1{
+            top: 70px;
+            color: rgba(4, 5, 1, 1);
+        }
+        .img1{
+            position: absolute;
+            top: -300px;
+            left: -225%;
+            transition: all 5s;
+        }
+        .boton1:active .img1{
+            top: 350px;
+            left: 25%;
+        } 
+        .info2{
+            position: absolute;
+            top: -500px;
+            font-size: 23px;
+            left: 230%;
+            width: 400%;
+            font-family: forte;
+            transition: all 5s;
+            color: rgba(0, 0, 0, 0);
+        }
+        .boton2:active .info2{
+            top: -150px;
+            color: rgba(4, 5, 1, 1);
+        }
+        .img2{
+            position: absolute;
+            top: -900px;
+            left: 7%;
+            transition: all 5s;
+        }
+        .boton2:active .img2{
+            top: 400px;
+        }
+        .info3{
+            position: absolute;
+            top: -800px;
+            font-size: 23px;
+            left: 230%;
+            width: 400%;
+            font-family: forte;
+            transition: all 5s;
+            color: rgba(0, 0, 0, 0);
+        }
+        .boton3:active .info3{
+            top: -310px;
+            color: rgba(4, 5, 1, 1);
+        }
+        .img3{
+            position: absolute;
+            top: -500px;
+            left: -925%;
+            transition: all 5s;
+        }
+        .boton3:active .img3{
+            top: -80px;
+            left: 350%;
+        } 
+	</style>
+</head>
+<body background="tonikaku.jpg" style="background-size: cover;">
+<div class="cuaOP">
+	<div class="boton1">
+        <div class="text">¿Que es un condicional de excel?</div>
+		<div class="cuaINFO">
+        <div class="img1"><img src="Excel logo.png" height="250px"></div>      
+        </div>
+		<div class="ti">
+			<div class="ti1">¿Que es un condicional de excel?</div>
+		</div>
+        <div class="info1"> 
+            Los condicionales en excel son una de las herramientas
+            mas utililez, ya que con este comando podemos lograr hacer
+            que en una casilla se logre una opcion cumpliendo con unas
+            determinadas series de criterios o valga la redundancia una
+            una serie de condiciones predispuestas por el usuario o programador
+            Por ejemplo, puedes indicarle a Excel que evalue el valor que se 
+            introduce en un rango determinado
+        </div>
+	</div>
+	<div class="boton2">
+		<div class="text1">¿Como se utiliza los condicionales en excel?</div>
+		<div class="cuaINFO1">
+        <div class="img2"><img src="ejemplo excel.jpg" height="30px"></div>      
+        </div>
+		<div class="tu">
+			<div class="tu1">¿Como se utiliza los condicionales en excel?</div>
+		</div>
+        <div class="info2">
+            Para utilizar los condicionales en Excel tenemos que tener claro en que
+            lo vamos a usar y cual va a ser la condicion ya que excel es un programa
+            dificil de manejar y algunas veces nos puede hacer confundirnos con nuestro progreso
+            o trabajo que estemos realizando. La sintaxis de un condicional en excel es:
+            <b>"=si(condicion que queremos imponer;resultado o valor dado dependiendo de la respuesta del usuario)".</b><br>
+            En el siguiente ejemplo se muestra graficamente un condicional:
+        </div>
+	</div>
+	<div class="boton3">
+		<div class="text2">¿Cuales son los funcionamientos de las acciones condicionadas?</div>
+		<div class="cuaINFO2"></div>
+        <div class="img3"><img src="sino.png" height="250px"></div>
+		<div class="lo">
+			<div class="lo1">¿Cuales son los funcionamientos de las acciones condicionadas?</div>
+		</div>
+        <div class="info3">
+            El funcionamiento de los condicionales como su nombre lo dice es condicionar cierta accion
+            haciendo que solamente se cumpla lo establecido anteriormente, y cierta condicion tiene que ser cumplifa si es que fue digitada correctemente en el programa. Aunque hay mas formas de condicionar en excel ninguna de estas es sencilla pero concuerdan en que (como se explica anteriormente) cumplir la condicion teniendo en cuenta la respuesta del usuario
+        </div>
+	</div>
+</div>
+</body>
+</html>
